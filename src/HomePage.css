@@ -1,0 +1,251 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Schoensperger Fr', sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  .page-container {
+    padding-bottom: 70px; /* Ajustez la valeur selon la hauteur de votre nav-bar */
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  
+  .header {
+    position: relative; /* Permet de positionner les éléments enfants */
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .language-buttons {
+    position: absolute; /* Permet de placer les boutons dans le coin */
+    top: 10px;
+    right: 20px; /* Distance du bord droit */
+    display: flex;
+    gap: 5px;
+  }
+  
+  .lang-button {
+    font-family: 'Schoensperger Fr', sans-serif;
+    font-size: 12px;
+    background: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 5px;
+    color: rgb(164, 179, 151);
+    cursor: pointer;
+  }
+  
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-top: 30px; /* Ajoute un espacement sous les boutons de langue */
+    
+  }
+  
+  .nav-button {
+    background: none;
+    color: rgb(207, 200, 161);
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .header-title {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 10px; /* Espace autour de l'image du titre */
+    height: auto;
+  }
+  
+ 
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+    width: 90%;
+    font-family: 'Schoensperger Fr', sans-serif;
+    padding-bottom: 70px;
+    
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le texte dans le bouton */
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    color: rgb(164, 179, 151);
+    text-align: center; /* Centre le texte */
+    font-size: 28px;
+    cursor: pointer;
+    font-family: 'Schoensperger Fr', sans-serif;
+    border-width: 5px;
+    border-color: gray;
+    border-radius: 5px;
+  }
+  
+  .detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border: 5px;
+    text-align: center;
+  
+  }
+
+  .detail-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre le contenu */
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-top: 5px solid gray; /* Bordure claire en haut */
+    border-left: 5px solid gray; /* Bordure claire à gauche */
+    border-bottom: 5px solid rgb(60, 60, 60); /* Bordure sombre en bas */
+    border-right: 5px solid rgb(60, 60, 60); /* Bordure sombre à droite */
+    color: rgb(164, 179, 151);
+    text-align: center;
+    font-size: 28px;
+    border-width: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Ajoute un espace sous le conteneur */
+  }
+  
+  .detail-title {
+    font-family: 'Schoensperger Fr', sans-serif;
+    font-size: 28px;
+    color: rgb(164, 179, 151);
+    margin-top: 0px; /* Remonte le titre */
+    margin-bottom: 0px; /* Réduit l'espace sous le titre principal */
+    text-align: center;
+  }
+  
+  .detail-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+    margin-top: 0px; /* Remonte le titre */
+    margin-bottom: 10px; /* Ajoute un léger espacement avant la liste */
+    text-align: center;
+    white-space: pre-line;
+  }
+  
+  .detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .detail-list li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 20px; /* Augmente l'espacement entre les items */
+    line-height: 1.5; /* Améliore l'espacement des lignes */
+    white-space: pre-line;
+    font-weight: bold;
+  
+  }
+  .hwdetail-content {
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    text-align: center;
+    width: 320px;
+
+  
+  }
+  .detail-highlight {
+    font-family: 'Schoensperger Fr', sans-serif;
+    font-size: 22px;
+    color: rgb(164, 179, 151);
+    line-height: 0;
+  }
+
+  .detail-main-title {
+    font-family: 'Schoensperger Fr', sans-serif;
+    font-size: 28px;
+    color: rgb(164, 179, 151);
+    margin-top: 0px; /* Remonte le titre */
+    margin-bottom: 0px; /* Réduit l'espace sous le titre principal */
+    text-align: center;
+    border-bottom: 5px solid gray; /* Bordure claire en haut */
+
+
+  }
+
+  .slide-out-right {
+    animation: slideOutRight 300ms forwards;
+  }
+  .slide-in-left {
+    animation: slideInLeft 300ms forwards;
+  }
+  .slide-out-up {
+    animation: slideOutUp 300ms forwards;
+  }
+  .slide-in-down {
+    animation: slideInDown 300ms forwards;
+  }
+  .slide-out-down {
+    animation: slideOutDown 300ms forwards;
+  }
+  .slide-in-up {
+    animation: slideInUp 300ms forwards;
+  }
+  
+  @keyframes slideOutRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+  }
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes slideOutUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100%); opacity: 0; }
+  }
+  @keyframes slideInDown {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes slideOutDown {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(100%); opacity: 0; }
+  }
+  @keyframes slideInUp {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 10px 0;
+  }
+  
+  
