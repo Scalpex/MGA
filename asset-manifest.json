@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MGA/static/css/main.1e79019a.css",
+    "main.js": "/MGA/static/js/main.f9758024.js",
+    "static/js/156.44e4ac5a.chunk.js": "/MGA/static/js/156.44e4ac5a.chunk.js",
+    "index.html": "/MGA/index.html",
+    "main.1e79019a.css.map": "/MGA/static/css/main.1e79019a.css.map",
+    "main.f9758024.js.map": "/MGA/static/js/main.f9758024.js.map",
+    "156.44e4ac5a.chunk.js.map": "/MGA/static/js/156.44e4ac5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e79019a.css",
+    "static/js/main.f9758024.js"
+  ]
+}
