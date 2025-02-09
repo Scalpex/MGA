@@ -8,6 +8,7 @@ body {
   }
 
   .page-container {
+
     padding-bottom: 70px; /* Ajustez la valeur selon la hauteur de votre nav-bar */
   }
   
@@ -49,15 +50,6 @@ body {
     align-items: center;
     justify-content: center; /* Centre les éléments horizontalement */
     margin-top: 30px; /* Ajoute un espacement sous les boutons de langue */
-    
-  }
-  
-  .nav-button {
-    background: none;
-    color: rgb(207, 200, 161);
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
   }
   
   .header-title {
@@ -67,7 +59,7 @@ body {
     height: auto;
   }
   
- 
+
   .main-content {
     display: flex;
     flex-direction: column;
@@ -77,7 +69,7 @@ body {
     margin-top: 5px;
     width: 90%;
     font-family: 'Schoensperger Fr', sans-serif;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     
   }
   
@@ -97,6 +89,7 @@ body {
     border-width: 5px;
     border-color: gray;
     border-radius: 5px;
+    white-space: pre-line
   }
   
   .detail-content {
@@ -132,11 +125,12 @@ body {
   
   .detail-title {
     font-family: 'Schoensperger Fr', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     color: rgb(164, 179, 151);
     margin-top: 0px; /* Remonte le titre */
     margin-bottom: 0px; /* Réduit l'espace sous le titre principal */
     text-align: center;
+    white-space: pre-line
   }
   
   .detail-subtitle {
@@ -190,62 +184,108 @@ body {
     margin-bottom: 0px; /* Réduit l'espace sous le titre principal */
     text-align: center;
     border-bottom: 5px solid gray; /* Bordure claire en haut */
-
-
   }
 
-  .slide-out-right {
-    animation: slideOutRight 300ms forwards;
-  }
-  .slide-in-left {
-    animation: slideInLeft 300ms forwards;
-  }
-  .slide-out-up {
-    animation: slideOutUp 300ms forwards;
-  }
-  .slide-in-down {
-    animation: slideInDown 300ms forwards;
-  }
-  .slide-out-down {
-    animation: slideOutDown 300ms forwards;
-  }
-  .slide-in-up {
-    animation: slideInUp 300ms forwards;
-  }
-  
-  @keyframes slideOutRight {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(100%); opacity: 0; }
-  }
-  @keyframes slideInLeft {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-  @keyframes slideOutUp {
-    from { transform: translateY(0); opacity: 1; }
-    to { transform: translateY(-100%); opacity: 0; }
-  }
-  @keyframes slideInDown {
-    from { transform: translateY(100%); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-  @keyframes slideOutDown {
-    from { transform: translateY(0); opacity: 1; }
-    to { transform: translateY(100%); opacity: 0; }
-  }
-  @keyframes slideInUp {
-    from { transform: translateY(-100%); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-  
-  .nav-bar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  .compet-menu {
     display: flex;
-    justify-content: space-around;
-    background: black;
-    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+    width: 90%;
+    font-family: 'Schoensperger Fr', sans-serif;
+    padding-bottom: 50px;
   }
-  
-  
+
+  .compet-button {
+    margin-bottom:  10px;
+  }
+
+/* Espace en bas pour que le contenu ne soit pas masqué */
+
+
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between; /* Pour répartir les boutons sur toute la largeur */
+  align-items: center;
+  padding: 0 30px; /* Ajoute un espacement sur les côtés */
+  z-index: 1000; /* Pour s'assurer que la navBar soit au-dessus d'autres éléments */
+}
+
+/* Les boutons de navigation eux-mêmes restent simples */
+.nav-button {
+  background: none;
+  border: none;
+  flex: 1;
+  text-align: center;
+  color: gray;
+  font-size: 42px;
+
+}
+
+
+/* Positionnement dans la nav-bar */
+.nav-left {
+  text-align: left;
+  margin-left: 30px;
+}
+.nav-up {
+  text-align: center;
+  flex: 2;
+}
+.nav-right {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* Exemples d'animations de transition */
+.slide-out-left {
+  animation: slideOutLeft 300ms forwards;
+}
+.slide-in-right {
+  animation: slideInRight 300ms forwards;
+}
+.slide-out-right {
+  animation: slideOutRight 300ms forwards;
+}
+.slide-in-left {
+  animation: slideInLeft 300ms forwards;
+}
+.slide-out-down {
+  animation: slideOutDown 300ms forwards;
+}
+.slide-in-up {
+  animation: slideInUp 300ms forwards;
+}
+
+@keyframes slideOutLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutDown {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(100%); opacity: 0; }
+}
+@keyframes slideInUp {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
