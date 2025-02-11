@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Schoensperger';
-  src: url('/public/fonts/Schoensperger Fr.ttf') format('truetype');
+    src: url('/MGA/fonts/Schoensperger-Fr.woff2') format('woff2'),
+       url('/MGA/fonts/Schoensperger-Fr.woff') format('woff'),
+       url('/MGA/fonts/Schoensperger-Fr.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
