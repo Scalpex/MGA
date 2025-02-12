@@ -10,7 +10,7 @@
 
 
 body {
-  font-family: 'Schoensperger-Fr', sans-serif;
+  font-family: 'Schoensperger Fr', sans-serif !important;
 }
 
 button, h1, h2, h3 {
