@@ -217,7 +217,7 @@ if (currentMenu === "coups-critiques") {
     </div>
   );
 }
-
+//---------------------------------------------------------------------------------
 if (currentDetail) {
       let detailData = null;
       if (currentMenu === "coups-critiques")
