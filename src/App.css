@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Schoensperger';
-  src: url('./fonts/Schoensperger Fr.ttf') format('truetype'),
-       url('./fonts/Schoensperger Fr.woff2') format('woff2'),
-       url('./fonts/Schoensperger Fr.woff') format('woff');
-  
+  src: url('/MGA/fonts/Schoensperger-Fr.woff2') format('woff2'),
+       url('/MGA/fonts/Schoensperger-Fr.woff') format('woff'),
+       url('/MGA/fonts/Schoensperger-Fr.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 
 body {
-  font-family: 'Schoensperger Fr', sans-serif;
+  font-family: 'Schoensperger-Fr', sans-serif;
 }
 
 button, h1, h2, h3 {
-  font-family: 'Schoensperger Fr', sans-serif;
+  font-family: 'Schoensperger-Fr', sans-serif;
 }
 
 
